@@ -1,0 +1,154 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500&family=Poppins:wght@400;500&family=Unna:wght@400;700&display=swap');
+
+* {
+    font-family: 'Poppins';
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    
+}
+
+:root {
+    --cor1: #D6AE10; /* Cor secundária */
+    --cor2: #EDA705; 
+    --cor3: #e2921b; /* Cor principal */
+    --cor4: #ee6a2c;
+    --cor5: #f58421;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+header {
+    display: flex;
+    height: 10vh;
+    padding: 5px;
+    background-color: var(--cor3);
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: -1px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.397);
+}
+
+header div {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    color: white;
+}
+
+header div p {
+    font-family: 'Unna', serif;
+    font-size: 1.6em;
+    margin: 5px;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.199);
+    cursor: pointer;
+}
+
+header div img {
+    width: 90px;
+    transition: .2s ease;
+}
+
+header div img:hover {
+    width: 100px;
+    cursor: pointer;
+}
+
+header nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 2px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.2s;
+    margin: 10px;
+}
+
+header nav ul li a:hover {
+    background-color: white;
+    color: black;
+    padding: 6px;
+    border-radius: 30px;
+    font-weight: 500;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.226);
+}
+
+
+div.opcoes {
+    margin: 20px;
+}
+
+main {
+    height: 80vh;
+}
+
+article.info-opcoes {
+    background-color: var(--cor3);
+    width: 800px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+    height: 55vh;
+}
+
+article.info-opcoes h2 {
+    font-size: 1em;
+    text-align: center;
+}
+
+article.info-opcoes form {
+    display: block;
+    margin: auto;
+    width: 580px;
+}
+
+article.info-opcoes p {
+    margin: 20px 0px 0px;
+    font-size: 0.8em;
+}
+
+article.info-opcoes label {
+    display: inline-block;
+    background-color: white;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+article.info-opcoes input.botao {
+    display: block;
+    background-color: white;
+    border: none;
+    margin: 100px auto 0px;
+    padding: 10px;
+    width: 80%;
+    border-radius: 20px;
+    font-size: 1.2em;
+    transition: 0.2s ease;
+}
+
+article.info-opcoes input.botao:hover {
+    font-weight: bold;
+    width: 81%;
+}
+
+footer {
+    display: flex;
+    background-color: var(--cor3);
+    padding: 10px;
+    justify-content: center;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.24);
+    align-items: center;
+    height: 50px;
+    color: white;
+    font-weight: 400;
+}

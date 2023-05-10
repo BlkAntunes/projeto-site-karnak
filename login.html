@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre</title>
+    <link rel="stylesheet" href="./estilos/login-style.css">
+    <link rel="shortcut icon" href="./imagens/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./estilos/media-query-cadastro.css">
+</head>
+<body>
+    <main>
+        <h1>KARNAK</h1>
+        <p class="titulo-paragrafo">Seja bem-vindo!</p>
+        <form action="">
+            <fieldset>
+                <legend>
+                    <label for="email">Email</label>
+                </legend>
+                <input type="email" name="email" id="email" placeholder="joaodasilva@gmail.com" required minlength="10" maxlength="50">
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <label for="senha">Senha</label>
+                </legend>
+                <input type="password" name="senha" id="senha" placeholder="12345678" required minlength="8" maxlength="20">
+            </fieldset>
+            <div class="login-centro">
+                <div class="button"><a href="./index.html">Entrar</a> <br></div>
+                <div class="cadastro-login">
+                    <a href="esqueci.html" class="cadastro">Esqueci minha senha</a>
+                    <p>Não tem uma conta? <a href="cadastro.html" class="cadastro">Cadastre-se</a></p>
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
